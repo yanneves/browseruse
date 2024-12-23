@@ -1,7 +1,20 @@
 {
   "name": "browseruse",
   "version": "0.0.1",
+  "type": "module",
+  "workspaces": [
+    "packages/browser",
+    "packages/client",
+    "packages/server"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yanneves/browseruse.git"
+  },
   "author": "Yann Eves <hello@yanneves.com>",
-  "description": "",
-  "license": "MIT"
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/yanneves/browseruse/issues"
+  },
+  "homepage": "https://browseruse.dev"
 }

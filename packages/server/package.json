@@ -1,0 +1,44 @@
+{
+  "name": "@gad/server",
+  "version": "0.0.0-alpha.0",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "vitest",
+    "check": "tsc --noEmit",
+    "lint": "prettier --ignore-path ../../.gitignore --check . && eslint .",
+    "format": "prettier --ignore-path ../../.gitignore --write .",
+    "dev": "node --env-file=.env --experimental-strip-types .",
+    "start": "tsx ."
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "openai": "^4.75.0",
+    "pg": "^8.13.1",
+    "playwright": "^1.49.0",
+    "sharp": "^0.33.5",
+    "tsx": "^4.19.2",
+    "uuid": "^11.0.3",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.10.1",
+    "@types/pg": "^8.11.10",
+    "@types/ws": "^8.5.13",
+    "eslint": "^9.16.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.13.0",
+    "prettier": "^3.4.1",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

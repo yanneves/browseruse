@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "resolveJsonModule": true
+  },
+  "include": ["lib/**/*.ts", "main.ts"]
+}

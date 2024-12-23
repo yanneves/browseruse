@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Defined as raw hsl() values, see https://tailwindcss.com/docs/customizing-colors#using-css-variables */
+
+    --color-black: 0 0% 0%;
+    --color-white: 0 0% 100%;
+
+    --color-primary-500: 210 50% 50%; /* Light blue */
+    --color-primary-600: 210 50% 30%;
+    --color-primary-700: 210 50% 40%;
+
+    --color-accent-500: 300 80% 50%; /* Fuchsia */
+    --color-accent-600: 300 80% 60%;
+
+    --color-text-400: 210 15% 20%; /* Darker grey for text */
+    --color-text-200: 210 15% 40%; /* Lighter grey */
+
+    --color-bg-50: 0 0% 100%; /* White background */
+    --color-bg-100: 0 0% 95%; /* Off-white */
+    --color-bg-200: 0 0% 90%; /* Light grey background */
+
+    --color-slate-50: 210 40% 98%;
+    --color-slate-100: 210 40% 96%;
+    --color-slate-200: 214 32% 91%;
+    --color-slate-300: 213 27% 84%;
+    --color-slate-400: 215 20% 65%;
+    --color-slate-500: 215 16% 47%;
+    --color-slate-600: 215 19% 35%;
+    --color-slate-700: 215 25% 27%;
+    --color-slate-800: 217 33% 17%;
+    --color-slate-900: 222 47% 11%;
+    --color-slate-950: 229 84% 5%;
+
+    --color-blaze-50: 45 100% 95%; /* Pale yellow */
+    --color-blaze-100: 45 100% 90%; /* Light yellow */
+    --color-blaze-200: 35 100% 80%; /* Soft orange */
+    --color-blaze-300: 30 100% 70%; /* Vibrant orange */
+    --color-blaze-400: 25 90% 60%; /* Strong orange */
+    --color-blaze-500: 15 86% 50%; /* Intense orange-red */
+    --color-blaze-600: 10 80% 40%; /* Fiery red */
+    --color-blaze-700: 5 75% 30%; /* Deep red */
+    --color-blaze-800: 0 70% 20%; /* Dark red */
+    --color-blaze-900: 0 60% 15%; /* Very dark red */
+    --color-blaze-950: 0 50% 10%; /* Almost black with a red hue */
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-black: 0 0% 100%;
+      --color-white: 0 0% 0%;
+
+      --color-primary-500: 210 50% 30%; /* Dark blue */
+      --color-primary-600: 210 50% 40%;
+      --color-primary-700: 210 50% 50%;
+
+      --color-accent-500: 300 80% 60%; /* Fuchsia */
+      --color-accent-600: 300 80% 50%;
+
+      --color-text-400: 0 0% 100%; /* White text */
+      --color-text-200: 0 0% 85%; /* Light grey text */
+
+      --color-bg-50: 210 20% 10%; /* Very dark blue background */
+      --color-bg-100: 210 20% 15%; /* Darker grey background */
+      --color-bg-200: 210 20% 20%; /* Medium grey */
+
+      --color-slate-50: 229 84% 5%;
+      --color-slate-100: 222 47% 11%;
+      --color-slate-200: 217 33% 17%;
+      --color-slate-300: 215 25% 27%;
+      --color-slate-400: 215 19% 35%;
+      --color-slate-500: 215 16% 47%;
+      --color-slate-600: 215 20% 65%;
+      --color-slate-700: 213 27% 84%;
+      --color-slate-800: 214 32% 91%;
+      --color-slate-900: 210 40% 96%;
+      --color-slate-950: 210 40% 98%;
+
+      --color-blaze-50: 0 50% 10%; /* Almost black with a red hue */
+      --color-blaze-100: 0 60% 15%; /* Very dark red */
+      --color-blaze-200: 0 70% 20%; /* Dark red */
+      --color-blaze-300: 5 75% 30%; /* Deep red */
+      --color-blaze-400: 10 80% 40%; /* Fiery red */
+      --color-blaze-500: 15 86% 50%; /* Intense orange-red */
+      --color-blaze-600: 25 90% 60%; /* Strong orange */
+      --color-blaze-700: 30 100% 70%; /* Vibrant orange */
+      --color-blaze-800: 35 100% 80%; /* Soft orange */
+      --color-blaze-900: 45 100% 90%; /* Light yellow */
+      --color-blaze-950: 45 100% 95%; /* Pale yellow */
+    }
+  }
+}

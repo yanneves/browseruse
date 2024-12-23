@@ -1,0 +1,12 @@
+buildImage = 'mcr.microsoft.com/playwright:v1.49.0'
+providers = []
+
+[variables]
+PATHNAME = '/railway-example'
+
+[phases.install]
+cmds = ['npm i']
+onlyIncludeFiles = ['package.json']
+
+[start]
+cmd = 'npm start'
